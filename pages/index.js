@@ -1,115 +1,42 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import Head from "next/head";
+import {FaDownload} from "react-icons/fa";
+import styles from "../styles/Home.module.css";
+import ThemeChange from "../components/ThemeChange";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
-      </footer>
-
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
+    <div className={styles.intro_page}>
+      <div className={[styles.container, styles.header, styles.active].join(" ")} id="home">
+          <Head>
+            <title>Portfolio</title>
+          </Head>
+          <div className={styles.header_content}>
+              <div className={styles.left_header}>
+                  <div className={styles.h_shape}></div>
+                  <div class={styles.image}>
+                      <img src="../public/hero.jpg" alt="ME" />
+                  </div>
+              </div>
+              <div className={styles.right_header}>
+                  <h1 className={styles.name}>
+                      Hi, I'm <span>Varun Vudathu. </span>
+                      A Full-Time Student at Georgia Tech.
+                  </h1>
+                  <p>
+                      I'm a Web Developer, I love to create beautiful and functional websites.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, libero?
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis sed aut!
+                  </p>
+                  <div className={styles.btn_con}>
+                      <a href="" className={styles.main_btn}>
+                          <span className={styles.btn_text}>Download CV</span>
+                          <span className={styles.btn_icon}><i><FaDownload /></i></span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <ThemeChange />
     </div>
-  )
+  );
 }

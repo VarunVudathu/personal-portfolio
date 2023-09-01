@@ -1,0 +1,253 @@
+.about_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.about_container .right_about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.about_container .right_about .about_item {
+    border: 1px solid var(--color-grey-5);
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about_container .right_about .about_item:hover {
+    cursor: default;
+    transform: translateY(-5px);
+    border: 1px solid var(--color-secondary);
+    box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
+}
+
+.about_container .right_about .about_item .abt_text {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about_container .right_about .about_item .abt_text .large_text {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+}
+
+.about_container .right_about .about_item .abt_text .small_text {
+    padding-left: 3rem;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: var(--color-grey-1);
+    letter-spacing: 2px;
+}
+
+.about_container .right_about .about_item .abt_text .small_text::before {
+    width: 2rem;
+    height: 2px;
+    background-color: var(--color-grey-5);
+}
+
+.about_container .left_about {
+    padding-right: 5rem;
+}
+
+.about_container .left_about p {
+    padding: 1rem;
+    color: var(--color-grey-1);
+}
+
+.about_container .left_about h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.about-container .left-about p {
+    padding-left: 0;
+}
+
+.about_stats {
+    padding-bottom: 3rem;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.about_stats .progress_bars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.about_stats .progress_bars .progress_bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.about_stats .progress_bars .progress_bar .prog_title {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.about_stats .progress_bars .progress_bar .progress_con {
+    display: flex;
+    align-items: center;
+}
+
+.about_stats .progress_bars .progress_bar .progress_con .prog_text {
+    color: var(--color-grey-2);
+}
+
+.about_stats .progress_bars .progress_bar .progress_con .progress {
+    width: 100%;
+    height: 0.45rem;
+    background-color: var(--color-grey-4);
+    margin-left: 1rem;
+    position: relative;
+}
+
+.about_stats .progress_bars .progress_bar .progress_con .progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--color-secondary);
+    transition: all 0.4s ease-in-out;
+    width: 60%;
+}
+
+.about_stats .progress_bars .progress_bar .progress_con .progress .html {
+    width: 80%;
+}
+
+.about_stats .progress_bars .progress_bar .progress_con .progress .css {
+    width: 95%;
+}
+
+.about_stats .progress_bars .progress_bar .progress_con .progress .js {
+    width: 75%;
+}
+
+.about_stats .progress_bars .progress_bar .progress_con .progress .react {
+    width: 60%;
+}
+
+.about_stats .progress_bars .progress_bar .progress_con .progress .node {
+    width: 87%;
+}
+
+.about_stats .progress_bars .progress_bar .progress_con .progress .python {
+    width: 70%;
+}
+
+.stat_title {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 3.5rem 0;
+    position: relative;
+}
+
+.stat_title::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 40%;
+    height: 1px;
+    background-color: var(--color-grey-5);
+    transform: translateX(-50%);
+}
+
+.main_title {
+    padding-top: 2%;
+    text-align: center;
+}
+
+.main_title h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.main_title h2 span {
+    color: var(--color-secondary);
+}
+
+.main_title h2 .bg_text {
+    color: var(--color-grey-5);
+    transition: all 0.4s ease-in-out;
+    font-size: 4rem;
+}
+
+.btn_con {
+    display: flex;
+    align-self: flex-start;
+}
+
+.main_btn {
+    border-radius: 30px;
+    position: relative;
+    border: 1px solid var(--color-secondary);
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+}
+
+.main_btn .btn_text {
+    padding: 0 2rem;
+}
+
+.main_btn .btn_icon {
+    background-color: var(--color-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    padding: 1rem;
+}
+
+.main_btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: all 0.4s ease-out;
+    z-index: -1;
+}
+
+.main_btn:hover {
+    transition: all 0.4s ease-out;
+}
+
+.main_btn:hover::before {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-secondary);
+    transform: translateX(0);
+    transition: all 0.4s ease-out;
+}
+
+.active {
+    display: block;
+    animation: appear 1s ease-in-out;
+    transform: translateY(0) scaleY(1);
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(-100%) scaleY(0);
+    }
+
+    100% {
+        transform: translateY(0) scaleY(1);
+    }
+}
