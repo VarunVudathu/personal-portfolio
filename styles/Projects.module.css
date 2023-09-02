@@ -9,8 +9,8 @@
     display: block;
     animation: appear 1s ease-in-out;
     transform: translateY(0) scaleY(1);
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 @keyframes appear {

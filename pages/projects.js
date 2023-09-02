@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "../styles/Projects.module.css";
 import ThemeChange from "../components/ThemeChange";
-import {FaGithub} from "react-icons/fa";
+import Image from 'next/image'
+import { FaGithub } from "react-icons/fa";
 
 export default function projects() {
   return (
@@ -11,23 +12,62 @@ export default function projects() {
           <h2>My <span>Portfolio</span><br></br><span className={styles.bg_text}>My Work</span></h2>
         </div>
         <p className={styles.port_text}>
-          Here is some of my work that I've done in various programming languages.
+          Here are some of the projects I have compeleted using various programming languages.
         </p>
         <div className={styles.portfolios}>
           <div className={styles.portfolio_item}>
             <div className={styles.image}>
-              <img src="img/port1.jpg" alt="" />
+              <Image src={"/img/shareplay.png"} width={100} height={100} />
             </div>
             <div className={styles.hover_items}>
-              <h3>Project Source</h3>
+              <h3>Shareplay</h3>
               <div className={styles.icons}>
-                <a href="#" className={styles.icon}>
+                <a href="https://github.com/orgs/Shareplay-Team-B/repositories" className={styles.icon}>
                   <FaGithub size={50} className={styles.git}/>
                 </a>
               </div>
             </div>
           </div>
           <div className={styles.portfolio_item}>
+            <div className={styles.image}>
+              <img src="img/port1.jpg" alt="" />
+            </div>
+            <div className={styles.hover_items}>
+              <h3>Web Arcade</h3>
+              <div className={styles.icons}>
+                <a href="https://github.com/orgs/GTWebArcade/repositories" className={styles.icon}>
+                  <FaGithub size={50} className={styles.git}/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className={styles.portfolio_item}>
+            <div className={styles.image}>
+              <img src="img/port1.jpg" alt="" />
+            </div>
+            <div className={styles.hover_items}>
+              <h3>Vibha Tutoring</h3>
+              <div className={styles.icons}>
+                <a href="https://github.com/rnachaloor/vibhaProject" className={styles.icon}>
+                  <FaGithub size={50} className={styles.git}/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className={styles.portfolio_item}>
+            <div className={styles.image}>
+              <img src="img/port1.jpg" alt="" />
+            </div>
+            <div className={styles.hover_items}>
+              <h3>Music Platform</h3>
+              <div className={styles.icons}>
+                <a href="https://github.com/VarunVudathu/music-client" className={styles.icon}>
+                  <FaGithub size={50} className={styles.git}/>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* <div className={styles.portfolio_item}>
             <div className={styles.image}>
               <img src="img/port1.jpg" alt="" />
             </div>
@@ -52,46 +92,7 @@ export default function projects() {
                 </a>
               </div>
             </div>
-          </div>
-          <div className={styles.portfolio_item}>
-            <div className={styles.image}>
-              <img src="img/port1.jpg" alt="" />
-            </div>
-            <div className={styles.hover_items}>
-              <h3>Project Source</h3>
-              <div className={styles.icons}>
-                <a href="#" className={styles.icon}>
-                  <FaGithub size={50} className={styles.git}/>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className={styles.portfolio_item}>
-            <div className={styles.image}>
-              <img src="img/port1.jpg" alt="" />
-            </div>
-            <div className={styles.hover_items}>
-              <h3>Project Source</h3>
-              <div className={styles.icons}>
-                <a href="#" className={styles.icon}>
-                  <FaGithub size={50} className={styles.git}/>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className={styles.portfolio_item}>
-            <div className={styles.image}>
-              <img src="img/port1.jpg" alt="" />
-            </div>
-            <div className={styles.hover_items}>
-              <h3>Project Source</h3>
-              <div className={styles.icons}>
-                <a href="#" className={styles.icon}>
-                  <FaGithub size={50} className={styles.git}/>
-                </a>
-              </div>
-            </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <ThemeChange />

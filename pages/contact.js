@@ -1,9 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../styles/Contact.module.css";
 import ThemeChange from "../components/ThemeChange";
+import emailjs from 'emailjs-com';
 import { FaLinkedin, FaGithub, FaInstagram, FaLocationArrow, FaEnvelope, FaUserGraduate, FaPhone, FaGlobeAsia } from "react-icons/fa";
 
 export default function contact() {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [subject, setSubject] = useState("");
+    const [message, setMessage] = useState("");
+
+    const temp_param = {
+        "name": name,
+        "email": email,
+        "subject": subject,
+        "message": message
+    }
+
+    const email_js_service = "service_s2io16n";
+    const template_id = "template_1e0jv7h";
+    const public_key = "mpwfG5LY2TApBDLT0";
+
+
+    const sendEmail = () => {
+        emailjs.send(
+            email_js_service,
+            template_id,
+            temp_param,
+            public_key
+        ).then(() => {
+            console.log("Message was sent");
+        }), () => {
+            console.log("Message was not sent");
+        }
+    }
+
     return (
         <div>
             <div className={[styles.container, styles.active].join(" ")}>
@@ -57,36 +88,34 @@ export default function contact() {
                             </div>
                             <div className={styles.contact_icons}>
                                 <div className={styles.contact_icon}>
-                                    <a href="www.facebook.com" target="_blank">
+                                    <a href="https://www.linkedin.com/in/varun-vudathu/" target="_blank">
                                         <FaLinkedin size={30} />
                                     </a>
-                                    <a href="#" target="_blank">
+                                    <a href="https://github.com/VarunVudathu" target="_blank">
                                         <FaGithub size={30} />
                                     </a>
-                                    <a href="#" target="_blank">
+                                    <a href="https://www.instagram.com/" target="_blank">
                                         <FaInstagram size={30} />
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div className={styles.right_contact}>
-                            <form action="" className={styles.contact_form}>
-                                <div className={[styles.input_control, styles.i_c_2].join(" ")}>
-                                    <input type="text" required placeholder="YOUR NAME" />
-                                    <input type="email" required placeholder="YOUR EMAIL" />
-                                </div>
-                                <div className={styles.input_control}>
-                                    <input type="text" required placeholder="ENTER SUBJECT" />
-                                </div>
-                                <div className={styles.input_control}>
-                                    <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
-                                </div>
-                                <div className={styles.submit_btn}>
-                                    <a className={styles.main_btn}>
-                                        <span className={styles.btn_text}>Send</span>
-                                    </a>
-                                </div>
-                            </form>
+                            <div className={[styles.input_control, styles.i_c_2].join(" ")}>
+                                <input type="text" required placeholder="YOUR NAME" onChange={(e) => { setName(e) }} />
+                                <input type="email" required placeholder="YOUR EMAIL" onChange={(e) => { setEmail(e) }} />
+                            </div>
+                            <div className={styles.input_control}>
+                                <input type="text" required placeholder="ENTER SUBJECT" onChange={(e) => { setSubject(e) }} />
+                            </div>
+                            <div className={styles.input_control}>
+                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..." onChange={(e) => { setMessage(e) }}></textarea>
+                            </div>
+                            <div className={styles.submit_btn} onClick={sendEmail}>
+                                <a className={styles.main_btn}>
+                                    <span className={styles.btn_text}>Send</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
