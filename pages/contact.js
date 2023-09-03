@@ -14,24 +14,24 @@ export default function contact() {
         "name": name,
         "email": email,
         "subject": subject,
-        "message": message
+        "message": message,
     }
-
-    const email_js_service = "service_s2io16n";
-    const template_id = "template_1e0jv7h";
-    const public_key = "mpwfG5LY2TApBDLT0";
 
 
     const sendEmail = () => {
-        emailjs.send(
-            email_js_service,
-            template_id,
-            temp_param,
-            public_key
-        ).then(() => {
-            console.log("Message was sent");
-        }), () => {
-            console.log("Message was not sent");
+        if (name == "" || email == "" || subject == "" || message == "") {
+            alert("Fill in all information!");
+        } else {
+            emailjs.send(
+                process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID,
+                process.env.NEXT_PUBLIC_TEMPLATE_ID,
+                temp_param,
+                process.env.NEXT_PUBLIC_PUBLIC_KEY
+            ).then(() => {
+                console.log("Message was sent");
+            }), () => {
+                console.log("Message was not sent");
+            }
         }
     }
 
@@ -46,8 +46,7 @@ export default function contact() {
                         <div className={styles.left_contact}>
                             <h4>Contact me here</h4>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                In, laborum numquam? Quam excepturi perspiciatis quas quasi.
+                                Thank you for taking a look at my portfolio. You can take a look at my other important websites for other info below. If you have any questions, send me an email through the service on the right. Thanks!
                             </p>
                             <div className={styles.contact_info}>
                                 <div className={styles.contact_item}>

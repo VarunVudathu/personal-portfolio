@@ -8,7 +8,7 @@ export default function experience() {
     <div>
       <div className={[styles.active, styles.container].join(" ")}>
         <div className={styles.main_title}>
-          <h2>My Experiences</h2>
+          <h2>My Experiences/Education</h2>
         </div>
         <div className={styles.timeline}>
           <div className={styles.timeline_item}>
