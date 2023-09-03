@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { FaDownload } from "react-icons/fa";
 import styles from "../styles/Home.module.css";
 import ThemeChange from "../components/ThemeChange";
@@ -14,7 +15,7 @@ export default function Home() {
               <div className={styles.left_header}>
                   <div className={styles.h_shape}></div>
                   <div class={styles.image}>
-                      <img src="../public/hero.jpg" alt="ME" />
+                      <Image src={"/profile.jpg"} width={500} height={700} alt="Profile Image" />
                   </div>
               </div>
               <div className={styles.right_header}>

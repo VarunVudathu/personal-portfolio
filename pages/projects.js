@@ -17,7 +17,7 @@ export default function projects() {
         <div className={styles.portfolios}>
           <div className={styles.portfolio_item}>
             <div className={styles.image}>
-              <Image src={"/img/shareplay.png"} width={100} height={100} />
+              <Image src={"/shareplay.png"} width={500} height={100} />
             </div>
             <div className={styles.hover_items}>
               <h3>Shareplay</h3>
@@ -30,7 +30,7 @@ export default function projects() {
           </div>
           <div className={styles.portfolio_item}>
             <div className={styles.image}>
-              <img src="img/port1.jpg" alt="" />
+              <Image src={"/webarcade.jpeg"} width={600} height={100} />
             </div>
             <div className={styles.hover_items}>
               <h3>Web Arcade</h3>
@@ -43,7 +43,7 @@ export default function projects() {
           </div>
           <div className={styles.portfolio_item}>
             <div className={styles.image}>
-              <img src="img/port1.jpg" alt="" />
+              <Image src={"/vibha.jpg"} width={800} height={100} />
             </div>
             <div className={styles.hover_items}>
               <h3>Vibha Tutoring</h3>
@@ -56,7 +56,7 @@ export default function projects() {
           </div>
           <div className={styles.portfolio_item}>
             <div className={styles.image}>
-              <img src="img/port1.jpg" alt="" />
+              <Image src={"/music.jpg"} width={600} height={100} />
             </div>
             <div className={styles.hover_items}>
               <h3>Music Platform</h3>
