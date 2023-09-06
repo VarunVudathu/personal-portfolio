@@ -1,6 +1,10 @@
 import React from "react";
+import Image from "next/image";
+import { DiGit, DiCss3, DiHeroku, DiHtml5, DiGithubBadge, DiJava, DiPython, DiMysql, DiMongodb, DiReact, DiAndroid } from "react-icons/di";
+import { IoLogoFirebase, IoLogoJavascript, IoLogoMicrosoft, IoLogoVercel, IoTimerOutline } from "react-icons/io5";
+import { RiTeamLine } from "react-icons/ri"
+import { MdOutlineWorkHistory, MdLeaderboard, MdCall } from "react-icons/md";
 import ThemeChange from "../components/ThemeChange";
-import { FaDownload } from "react-icons/fa";
 import styles from "../styles/About.module.css";
 
 export default function About() {
@@ -8,7 +12,7 @@ export default function About() {
         <div>
             <div className={styles.active}>
                 <div className={styles.main_title}>
-                    <h2>About <span>me</span><br></br><span className={styles.bg_text}>my stats</span></h2>
+                    <h2>About <span>me</span><br></br><span className={styles.bg_text}>my info</span></h2>
                 </div>
                 <div className={styles.about_container}>
                     {/* <div className={styles.left_about}>
@@ -51,69 +55,110 @@ export default function About() {
                         <div className={styles.about_item}>
                             <div className={styles.abt_text}>
                                 <p className={styles.large_text}>Vibha</p>
-                                <p className={styles.small_text}>Dedicated volunteer who lent support on many major fundrasinging events like Vibha DreamMile and Vibha Cricket. Raised money to fund education for under-resourced kids in India and US.</p>
+                                <p className={styles.small_text}>Dedicated volunteer who lent support on many major fundraising events like Vibha DreamMile and Vibha Cricket. Raised money to fund education for under-resourced kids in India and US.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className={styles.about_stats}>
                     <h4 className={styles.stat_title}>My Skills</h4>
-                    <label className={styles.switch}>
-                        <input type="checkbox" />
-                        <span className={[styles.slider, styles.round].join(" ")}></span>
-                    </label>
-                    <div className={styles.progress_bars}>
-                        <div className={styles.progress_bar}>
-                            <p className={styles.prog_title}>HTML/CSS</p>
-                            <div className={styles.progress_con}>
-                                <p className={styles.prog_text}>80%</p>
-                                <div className={styles.progress}>
-                                    <span className={styles.html}></span>
+                    <div className={styles.skills}>
+                        <div className={styles.tech_skills}>
+                            <p>Technical Skills</p>
+                            <div className={styles.sec}>
+                                <div className={styles.icon_skill}>
+                                    <div>Python</div>
+                                    <DiPython size={70} />
+                                </div>
+                                <div className={styles.icon_skill}>
+                                    <div>JavaScript</div>
+                                    <IoLogoJavascript size={70} />
+                                </div>
+                                <div className={styles.icon_skill}>
+                                    <div>Java</div>
+                                    <DiJava size={70} />
+                                </div>
+                                <div className={styles.icon_skill}>
+                                    <div>React.js</div>
+                                    <DiReact size={70} />
+                                </div>
+                                <div className={styles.icon_skill}>
+                                    <div>MongoDB</div>
+                                    <DiMongodb size={70} />
+                                </div>
+                            </div>
+                            <div className={styles.sec}>
+                                <div className={styles.icon_skill}>
+                                    <div>MySQL</div>
+                                    <DiMysql size={70} />
+                                </div>
+                                <div className={styles.icon_skill}>
+                                    <div>Firebase</div>
+                                    <IoLogoFirebase size={70} />
+                                </div>
+                                <div className={styles.icon_skill}>
+                                    <div>Android</div>
+                                    <DiAndroid size={70} />
+                                </div>
+                                <div className={styles.icon_skill}>
+                                    <div>Github</div>
+                                    <DiGithubBadge size={70} />
+                                </div>
+                                <div className={styles.icon_skill}>
+                                    <div>CSS</div>
+                                    <DiCss3 size={70} />
+                                </div>
+                            </div>
+                            <div className={styles.sec}>
+                                <div className={styles.icon_skill}>
+                                    <div>HTML</div>
+                                    <DiHtml5 size={70} />
+                                </div>
+                                <div className={styles.icon_skill}>
+                                    <div>Heroku</div>
+                                    <DiHeroku size={70} />
+                                </div>
+                                <div className={styles.icon_skill}>
+                                    <div>Git</div>
+                                    <DiGit size={70} />
+                                </div>
+                                <div className={styles.icon_skill}>
+                                    <div>MS Office</div>
+                                    <IoLogoMicrosoft size={70} />
+                                </div>
+                                <div className={styles.icon_skill}>
+                                    <div>Vercel</div>
+                                    <IoLogoVercel size={70} />
                                 </div>
                             </div>
                         </div>
-                        <div className={styles.progress_bar}>
-                            <p className={styles.prog_title}>JavaScript</p>
-                            <div className={styles.progress_con}>
-                                <p className={styles.prog_text}>80%</p>
-                                <div className={styles.progress}>
-                                    <span className={styles.css}></span>
+                        <div className={styles.gap}></div>
+                        <div className={styles.soft_skills}>
+                            <p>Soft Skills</p>
+                            <div className={styles.overall}>
+                                <div className={styles.sect}>
+                                    <div className={styles.icon_skill}>
+                                        <div>Management</div>
+                                        <IoTimerOutline size={70} />
+                                    </div>
+                                    <div className={styles.icon_skill}>
+                                        <div>Teamwork</div>
+                                        <RiTeamLine size={70} />
+                                    </div>
+                                    <div className={styles.icon_skill}>
+                                        <div>Diligence</div>
+                                        <MdOutlineWorkHistory size={70} />
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className={styles.progress_bar}>
-                            <p className={styles.prog_title}>Python</p>
-                            <div className={styles.progress_con}>
-                                <p className={styles.prog_text}>80%</p>
-                                <div className={styles.progress}>
-                                    <span className={styles.js}></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={styles.progress_bar}>
-                            <p className={styles.prog_title}>Java</p>
-                            <div className={styles.progress_con}>
-                                <p className={styles.prog_text}>80%</p>
-                                <div className={styles.progress}>
-                                    <span className={styles.react}></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={styles.progress_bar}>
-                            <p className={styles.prog_title}>React/React Native</p>
-                            <div className={styles.progress_con}>
-                                <p className={styles.prog_text}>80%</p>
-                                <div className={styles.progress}>
-                                    <span className={styles.node}></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={styles.progress_bar}>
-                            <p className={styles.prog_title}>MySQL</p>
-                            <div className={styles.progress_con}>
-                                <p className={styles.prog_text}>80%</p>
-                                <div className={styles.progress}>
-                                    <span className={styles.python}></span>
+                                <div className={styles.sect}>
+                                    <div className={styles.icon_skill}>
+                                        <div>Leadership</div>
+                                        <MdLeaderboard size={70} />
+                                    </div>
+                                    <div className={styles.icon_skill}>
+                                        <div>Communication</div>
+                                        <MdCall size={70} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
