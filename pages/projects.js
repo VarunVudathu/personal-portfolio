@@ -3,6 +3,7 @@ import styles from "../styles/Projects.module.css";
 import ThemeChange from "../components/ThemeChange";
 import Image from 'next/image'
 import { FaGithub } from "react-icons/fa";
+import { RiComputerLine } from "react-icons/ri";
 
 export default function projects() {
   return (
@@ -25,6 +26,9 @@ export default function projects() {
                 <a href="https://github.com/orgs/Shareplay-Team-B/repositories" className={styles.icon}>
                   <FaGithub size={50} className={styles.git}/>
                 </a>
+                <a href="https://shareplay-server-b.herokuapp.com" className={styles.icon}>
+                  <RiComputerLine size={50} className={styles.git}/>
+                </a>
               </div>
             </div>
           </div>
@@ -37,6 +41,9 @@ export default function projects() {
               <div className={styles.icons}>
                 <a href="https://github.com/orgs/GTWebArcade/repositories" className={styles.icon}>
                   <FaGithub size={50} className={styles.git}/>
+                </a>
+                <a href="https://webarcade-webapp.herokuapp.com/" className={styles.icon}>
+                  <RiComputerLine size={50} className={styles.git}/>
                 </a>
               </div>
             </div>
@@ -67,12 +74,12 @@ export default function projects() {
               </div>
             </div>
           </div>
-          {/* <div className={styles.portfolio_item}>
+          <div className={styles.portfolio_item}>
             <div className={styles.image}>
-              <img src="img/port1.jpg" alt="" />
+              <p>More coming very soon</p>
             </div>
             <div className={styles.hover_items}>
-              <h3>Project Source</h3>
+              <h3>Natural Disaster <br></br>Prediction</h3>
               <div className={styles.icons}>
                 <a href="#" className={styles.icon}>
                   <FaGithub size={50} className={styles.git}/>
@@ -80,7 +87,7 @@ export default function projects() {
               </div>
             </div>
           </div>
-          <div className={styles.portfolio_item}>
+          {/* <div className={styles.portfolio_item}>
             <div className={styles.image}>
               <img src="img/port1.jpg" alt="" />
             </div>

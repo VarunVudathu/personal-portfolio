@@ -64,7 +64,7 @@ export default function About() {
                     <h4 className={styles.stat_title}>My Skills</h4>
                     <div className={styles.skills}>
                         <div className={styles.tech_skills}>
-                            <p>Technical Skills</p>
+                            <p className={styles.mini_title}>Technical Skills</p>
                             <div className={styles.sec}>
                                 <div className={styles.icon_skill}>
                                     <div>Python</div>
@@ -97,7 +97,7 @@ export default function About() {
                                     <IoLogoFirebase size={70} />
                                 </div>
                                 <div className={styles.icon_skill}>
-                                    <div>Android</div>
+                                    <div>Android Dev</div>
                                     <DiAndroid size={70} />
                                 </div>
                                 <div className={styles.icon_skill}>
@@ -131,34 +131,27 @@ export default function About() {
                                     <IoLogoVercel size={70} />
                                 </div>
                             </div>
-                        </div>
-                        <div className={styles.gap}></div>
-                        <div className={styles.soft_skills}>
-                            <p>Soft Skills</p>
-                            <div className={styles.overall}>
-                                <div className={styles.sect}>
-                                    <div className={styles.icon_skill}>
-                                        <div>Management</div>
-                                        <IoTimerOutline size={70} />
-                                    </div>
-                                    <div className={styles.icon_skill}>
-                                        <div>Teamwork</div>
-                                        <RiTeamLine size={70} />
-                                    </div>
-                                    <div className={styles.icon_skill}>
-                                        <div>Diligence</div>
-                                        <MdOutlineWorkHistory size={70} />
-                                    </div>
+                            <p className={styles.mini_title}>Soft Skills</p>
+                            <div className={styles.sec}>
+                                <div className={styles.icon_skill}>
+                                    <div>Management</div>
+                                    <IoTimerOutline size={70} />
                                 </div>
-                                <div className={styles.sect}>
-                                    <div className={styles.icon_skill}>
-                                        <div>Leadership</div>
-                                        <MdLeaderboard size={70} />
-                                    </div>
-                                    <div className={styles.icon_skill}>
-                                        <div>Communication</div>
-                                        <MdCall size={70} />
-                                    </div>
+                                <div className={styles.icon_skill}>
+                                    <div>Teamwork</div>
+                                    <RiTeamLine size={70} />
+                                </div>
+                                <div className={styles.icon_skill}>
+                                    <div>Diligence</div>
+                                    <MdOutlineWorkHistory size={70} />
+                                </div>
+                                <div className={styles.icon_skill}>
+                                    <div>Leadership</div>
+                                    <MdLeaderboard size={70} />
+                                </div>
+                                <div className={styles.icon_skill}>
+                                    <div>Communication</div>
+                                    <MdCall size={70} />
                                 </div>
                             </div>
                         </div>
