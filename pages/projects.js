@@ -66,9 +66,9 @@ export default function projects() {
               <Image src={"/music.jpg"} width={600} height={100} />
             </div>
             <div className={styles.hover_items}>
-              <h3>Music Platform</h3>
+              <h3>Music Mood Analyzer</h3>
               <div className={styles.icons}>
-                <a href="https://github.com/VarunVudathu/music-client" className={styles.icon}>
+                <a href="" className={styles.icon}>
                   <FaGithub size={50} className={styles.git}/>
                 </a>
               </div>
