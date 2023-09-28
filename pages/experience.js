@@ -11,6 +11,18 @@ export default function experience() {
           <h2><span>My</span> Experiences <br></br><span>My</span> Education</h2>
         </div>
         <div className={styles.timeline}>
+        <div className={styles.timeline_item}>
+            <div className={styles.tl_icon}>
+              <FaBriefcase />
+            </div>
+            <div>
+              <p className={styles.tl_duration}>Aug 2023 - present</p>
+              <h5>Georgia Tech College of Computing</h5>
+              <p>
+                Working in the TSO Cybersecurity department, engaging in fixing security vulnerabilites through Python software. Developed Python programs using many frameworks to sort and organize data into SnipeIT inventories.
+              </p>
+            </div>
+          </div>
           <div className={styles.timeline_item}>
             <div className={styles.tl_icon}>
               <FaBriefcase />

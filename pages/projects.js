@@ -68,7 +68,7 @@ export default function projects() {
             <div className={styles.hover_items}>
               <h3>Music Mood Analyzer</h3>
               <div className={styles.icons}>
-                <a href="" className={styles.icon}>
+                <a href="https://github.com/VarunVudathu/music-mood-analyzer" className={styles.icon}>
                   <FaGithub size={50} className={styles.git}/>
                 </a>
               </div>
