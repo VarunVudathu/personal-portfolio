@@ -14,7 +14,7 @@ export default function Home() {
           <div className={styles.header_content}>
               <div className={styles.left_header}>
                   <div className={styles.h_shape}></div>
-                  <div class={styles.image}>
+                  <div className={styles.image}>
                       <Image src={"/profile.jpg"} width={500} height={700} alt="Profile Image" />
                   </div>
               </div>
@@ -30,7 +30,7 @@ export default function Home() {
                     making me a valuable asset in technology-driven projects.
                   </p>
                   <div className={styles.btn_con}>
-                      <a href="../public/Resume.pdf" className={styles.main_btn} download>
+                      <a href="/Resume.pdf" className={styles.main_btn} download>
                           <span className={styles.btn_text}>Download CV</span>
                           <span className={styles.btn_icon}><i><FaDownload /></i></span>
                       </a>
