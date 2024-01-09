@@ -13,7 +13,7 @@ export default function projects() {
           <h2>My <span>Portfolio</span><br></br><span className={styles.bg_text}>My Work</span></h2>
         </div>
         <p className={styles.port_text}>
-          Here are some of the projects I have compeleted using various programming languages.
+          Here are some of the projects I have compeleted using various programming languages and frameworks.
         </p>
         <div className={styles.portfolios}>
           <div className={styles.portfolio_item}>
@@ -50,12 +50,51 @@ export default function projects() {
           </div>
           <div className={styles.portfolio_item}>
             <div className={styles.image}>
-              <Image src={"/vibha.jpg"} width={800} height={100} />
+              <Image src={"/vibha.jpg"} width={600} height={100} />
             </div>
             <div className={styles.hover_items}>
               <h3>Vibha Tutoring</h3>
               <div className={styles.icons}>
                 <a href="https://github.com/rnachaloor/vibhaProject" className={styles.icon}>
+                  <FaGithub size={50} className={styles.git}/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className={styles.portfolio_item}>
+            <div className={styles.image}>
+              <Image src={"/weather.png"} width={600} height={100} />
+            </div>
+            <div className={styles.hover_items}>
+              <h3>Weather Forecast</h3>
+              <div className={styles.icons}>
+                <a href="https://github.com/orgs/GTWeatherForcast/repositories" className={styles.icon}>
+                  <FaGithub size={50} className={styles.git}/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className={styles.portfolio_item}>
+            <div className={styles.image}>
+              <Image src={"/dungeon.png"} width={600} height={100} />
+            </div>
+            <div className={styles.hover_items}>
+              <h3>Dungeon Game</h3>
+              <div className={styles.icons}>
+                <a href="https://github.com/tylerrcady/CS2340B_Team32" className={styles.icon}>
+                  <FaGithub size={50} className={styles.git}/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className={styles.portfolio_item}>
+            <div className={styles.image}>
+              <Image src={"/nd.png"} width={600} height={100} />
+            </div>
+            <div className={styles.hover_items}>
+              <h3>Natural Disaster Prediction</h3>
+              <div className={styles.icons}>
+                <a href="https://github.com/rishiso/natural-disaster-prediction" className={styles.icon}>
                   <FaGithub size={50} className={styles.git}/>
                 </a>
               </div>
@@ -79,11 +118,11 @@ export default function projects() {
               <p>More coming very soon</p>
             </div>
             <div className={styles.hover_items}>
-              <h3>Natural Disaster <br></br>Prediction</h3>
+              <h3>...</h3>
               <div className={styles.icons}>
-                <a href="#" className={styles.icon}>
+                {/* <a href="#" className={styles.icon}>
                   <FaGithub size={50} className={styles.git}/>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

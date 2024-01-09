@@ -19,7 +19,7 @@ export default function experience() {
               <p className={styles.tl_duration}>Aug 2023 - present</p>
               <h5>Georgia Tech College of Computing</h5>
               <p>
-                Working in the TSO Cybersecurity department, engaging in fixing security vulnerabilites through Python software. Developed Python programs using many frameworks to sort and organize data into SnipeIT inventories.
+                  Responsible for developing advanced Python algorithms for complex data structuring, report integration, and vulnerability management. Conducting detailed Linux-based operations for the identification and mitigation of vulnerabilities within our network infrastructure. Developed a Python module, enhancing the extraction and processing of vulnerability and asset data, thus fortifying our cybersecurity measures.
               </p>
             </div>
           </div>
