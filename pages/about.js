@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import { DiGit, DiCss3, DiHeroku, DiHtml5, DiGithubBadge, DiJava, DiPython, DiMysql, DiMongodb, DiReact, DiAndroid } from "react-icons/di";
-import { IoLogoFirebase, IoLogoJavascript, IoLogoMicrosoft, IoLogoVercel, IoTimerOutline } from "react-icons/io5";
+import { DiGit, DiCss3, DiNodejs, DiHtml5, DiGithubBadge, DiJava, DiPython, DiMysql, DiMongodb, DiReact, DiAndroid, DiWindows, DiScrum} from "react-icons/di";
+import { IoLogoFirebase, IoLogoJavascript, IoTimerOutline } from "react-icons/io5";
 import { RiTeamLine } from "react-icons/ri"
+import { TbHexagonLetterC } from "react-icons/tb";
 import { MdOutlineWorkHistory, MdLeaderboard, MdCall } from "react-icons/md";
 import ThemeChange from "../components/ThemeChange";
 import styles from "../styles/About.module.css";
@@ -15,24 +16,6 @@ export default function About() {
                     <h2>About <span>me</span><br></br><span className={styles.bg_text}>my info</span></h2>
                 </div>
                 <div className={styles.about_container}>
-                    {/* <div className={styles.left_about}>
-                        <h4>Information About me</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Eveniet labore nihil obcaecati consequatur. Debitis error doloremque,
-                            vero eos vel nemo eius voluptatem dicta tenetur modi. <br /> <br /> La musica
-                            delectus dolore fugiat exercitationem a,
-                            ipsum quidem quo enim natus accusamus labore dolores nam. Unde.
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Harum non necessitatibus deleniti eum soluta.
-                        </p>
-                        <div className={styles.btn_con}>
-                            <a href="../public/Resume.pdf" download className={styles.main_btn}>
-                                <span className={styles.btn_text}>Download CV</span>
-                                <span className={styles.btn_icon}><i><FaDownload /></i></span>
-                            </a>
-                        </div>
-                    </div> */}
                     <div className={styles.right_about}>
                         <div className={styles.about_item}>
                             <div className={styles.abt_text}>
@@ -71,26 +54,30 @@ export default function About() {
                                     <DiPython size={70} />
                                 </div>
                                 <div className={styles.icon_skill}>
-                                    <div>JavaScript</div>
-                                    <IoLogoJavascript size={70} />
-                                </div>
-                                <div className={styles.icon_skill}>
                                     <div>Java</div>
                                     <DiJava size={70} />
                                 </div>
                                 <div className={styles.icon_skill}>
-                                    <div>React.js</div>
-                                    <DiReact size={70} />
+                                    <div>C Programming</div>
+                                    <TbHexagonLetterC size={70} />
                                 </div>
                                 <div className={styles.icon_skill}>
-                                    <div>MongoDB</div>
-                                    <DiMongodb size={70} />
+                                    <div>JavaScript</div>
+                                    <IoLogoJavascript size={70} />
+                                </div>
+                                <div className={styles.icon_skill}>
+                                    <div>React.js</div>
+                                    <DiReact size={70} />
                                 </div>
                             </div>
                             <div className={styles.sec}>
                                 <div className={styles.icon_skill}>
                                     <div>MySQL</div>
                                     <DiMysql size={70} />
+                                </div>
+                                <div className={styles.icon_skill}>
+                                    <div>MongoDB</div>
+                                    <DiMongodb size={70} />
                                 </div>
                                 <div className={styles.icon_skill}>
                                     <div>Firebase</div>
@@ -101,12 +88,8 @@ export default function About() {
                                     <DiAndroid size={70} />
                                 </div>
                                 <div className={styles.icon_skill}>
-                                    <div>Github</div>
-                                    <DiGithubBadge size={70} />
-                                </div>
-                                <div className={styles.icon_skill}>
-                                    <div>CSS</div>
-                                    <DiCss3 size={70} />
+                                    <div>Git</div>
+                                    <DiGit size={70} />
                                 </div>
                             </div>
                             <div className={styles.sec}>
@@ -115,20 +98,20 @@ export default function About() {
                                     <DiHtml5 size={70} />
                                 </div>
                                 <div className={styles.icon_skill}>
-                                    <div>Heroku</div>
-                                    <DiHeroku size={70} />
+                                    <div>CSS</div>
+                                    <DiCss3 size={70} />
                                 </div>
                                 <div className={styles.icon_skill}>
-                                    <div>Git</div>
-                                    <DiGit size={70} />
+                                    <div>Node.js</div>
+                                    <DiNodejs size={70} />
                                 </div>
                                 <div className={styles.icon_skill}>
-                                    <div>MS Office</div>
-                                    <IoLogoMicrosoft size={70} />
+                                    <div>Windows</div>
+                                    <DiWindows size={70} />
                                 </div>
                                 <div className={styles.icon_skill}>
-                                    <div>Vercel</div>
-                                    <IoLogoVercel size={70} />
+                                    <div>Scrum</div>
+                                    <DiScrum size={70} />
                                 </div>
                             </div>
                             <p className={styles.mini_title}>Soft Skills</p>

@@ -24,10 +24,9 @@ export default function Home() {
                       A Full-Time Student at Georgia Tech.
                   </h1>
                   <p>
-                    I am a dedicated computer science student with a passion for web development and data science. 
-                    I thrive on creating innovative web solutions and uncovering insights from data. 
-                    My commitment to learning and problem-solving drives me to excel in these fields, 
-                    making me a valuable asset in technology-driven projects.
+                    I am a dedicated computer science student with a passion for computer vision in embedded systems, AI/ML, and web development. 
+                    I thrive on creating innovative solutions in AI and uncovering insights from data-driven systems. 
+                    My commitment to learning and problem-solving drives me to excel in these fields, making me a valuable asset in technology-driven projects.
                   </p>
                   <div className={styles.btn_con}>
                       <a href="/Resume.pdf" className={styles.main_btn} download>

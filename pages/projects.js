@@ -76,19 +76,6 @@ export default function projects() {
           </div>
           <div className={styles.portfolio_item}>
             <div className={styles.image}>
-              <Image src={"/dungeon.png"} width={600} height={100} />
-            </div>
-            <div className={styles.hover_items}>
-              <h3>Dungeon Game</h3>
-              <div className={styles.icons}>
-                <a href="https://github.com/tylerrcady/CS2340B_Team32" className={styles.icon}>
-                  <FaGithub size={50} className={styles.git}/>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className={styles.portfolio_item}>
-            <div className={styles.image}>
               <Image src={"/nd.png"} width={600} height={100} />
             </div>
             <div className={styles.hover_items}>
@@ -108,6 +95,32 @@ export default function projects() {
               <h3>Music Mood Analyzer</h3>
               <div className={styles.icons}>
                 <a href="https://github.com/VarunVudathu/music-mood-analyzer" className={styles.icon}>
+                  <FaGithub size={50} className={styles.git}/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className={styles.portfolio_item}>
+            <div className={styles.image}>
+              <Image src={"/pm.png"} width={600} height={100} />
+            </div>
+            <div className={styles.hover_items}>
+              <h3>FotoMind</h3>
+              <div className={styles.icons}>
+                <a href="https://github.com/FotoMind/smart-photo-management" className={styles.icon}>
+                  <FaGithub size={50} className={styles.git}/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className={styles.portfolio_item}>
+            <div className={styles.image}>
+              <Image src={"/dungeon.png"} width={600} height={100} />
+            </div>
+            <div className={styles.hover_items}>
+              <h3>Dungeon Game</h3>
+              <div className={styles.icons}>
+                <a href="https://github.com/tylerrcady/CS2340B_Team32" className={styles.icon}>
                   <FaGithub size={50} className={styles.git}/>
                 </a>
               </div>
